@@ -1,0 +1,11 @@
+Consideraciones:
+- Tarda 45.65 minutos en traer todos los datos (Haciendo la petición "mas informacion", para los datos de "Datos de publicacion" y "Otros autores")
+- Tarda 5.55 minutos sin traer los datos mencionados anteriormente
+- Para tomar todos los documentos y sus datos por materia debo hacer solicitudes
+  GET (para ir cambiando de hojas por cada materia) y/o POST (para mostrar "mas información" por cada documento), y en algunos casos (no siempre) el servidor deja de responder a mis peticiones (al parecer se satura), por lo que no se guardan esos datos.
+
+Sugerencia de implementación:
+- Cómo ahora PowerBI se le puede injectar python, se podria dejar el código ahí. Y debido al tiempo excesivo de carga para recibir los datos, sería ideal que la consulta se ejecutara cada cierto tiempo y no cada vez que alguien visualice los reportes.
+
+
+  
